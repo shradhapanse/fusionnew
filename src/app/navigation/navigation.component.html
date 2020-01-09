@@ -2,9 +2,12 @@
 <header id="header-wrap">
 	<nav class="navbar navbar-expand-md bg-white fixed-top scrolling-navbar">
 	  <div class="container">
-	    <a href="" class="navbar-brand"><img src="{{logo}}" alt=""></a>
+		<a href="" class="navbar-brand"><img src="{{logo}}" alt=""></a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+			<span class="navbar-toggler-icon text-danger"></span>
+		  </button>
 
-	    <div class="collapse navbar-collapse">
+	    <div class="collapse navbar-collapse"id="collapsibleNavbar">
 	    <ul class="navbar-nav mr-auto w-100 justify-content-end clearfix">
 	      <li class="nav-item p-2" *ngFor="let nav of navbar"><a class="nav-link" routerLink="{{nav.path}}">{{nav.link}}</a></li>
 	    </ul>
